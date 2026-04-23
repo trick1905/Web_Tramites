@@ -1,58 +1,208 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <script src="https://cdn.tailwindcss.com"></script>
-<script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            granate: '#6b0f1a', // El color de tu cabecera
-            dorado: '#b39055',  // El color de los detalles
-          }
-        }
-      }
-    }
-</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestión de Trámites en Barcelona | Brad P. Zanabria</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f9f9f9; color: #333; }
-        header { background-color: #6b0f1a; color: white; text-align: center; padding: 3rem 1rem; }
-        header h1 { margin: 0 0 10px 0; font-size: 2rem; }
-        header p { font-size: 1.2rem; margin-bottom: 20px; color: #e6d3a3; }
-        .btn-whatsapp { background-color: #25D366; color: white; padding: 15px 30px; text-decoration: none; border-radius: 50px; font-weight: bold; font-size: 1.1rem; display: inline-block; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-        .services { padding: 3rem 1rem; max-width: 800px; margin: auto; }
-        .services h2 { text-align: center; color: #6b0f1a; }
-        .service-list { list-style: none; padding: 0; }
-        .service-list li { background: white; margin: 10px 0; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); display: flex; justify-content: space-between; align-items: center; }
-        .service-list li a { color: #6b0f1a; text-decoration: none; font-weight: bold; border: 1px solid #6b0f1a; padding: 8px 15px; border-radius: 5px; font-size: 0.9rem;}
-        .service-list li a:hover { background-color: #6b0f1a; color: white; }
-        footer { background-color: #333; color: white; text-align: center; padding: 20px; margin-top: 20px; }
-    </style>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-[#f4f4f5] text-[#333] font-sans m-0 p-0">
 
-<header>
-    <h1>¿Eres Latinoamericano y vives en Barcelona?</h1>
-    <p>Gestión integral de trámites consulares, de extranjería y administrativos.</p>
-    <a href="https://wa.me/34611898500?text=Hola%20Brad,%20necesito%20ayuda%20con%20mis%20trámites%20en%20España." class="btn-whatsapp">¡Escríbeme por WhatsApp!</a>
+<header class="relative bg-gradient-to-br from-[#4a0a12] via-[#6b0f1a] to-[#9b1b26] text-white py-24 px-4 overflow-hidden shadow-2xl">
+    <div class="absolute top-0 right-0 -mr-20 -mt-20 w-72 h-72 rounded-full bg-white opacity-5 blur-3xl"></div>
+    
+    <div class="max-w-4xl mx-auto text-center relative z-10">
+        <span class="bg-[#b39055] text-white text-sm font-bold uppercase tracking-widest py-1.5 px-4 rounded-full mb-6 inline-block shadow-md">
+            📍 Tu Gestor en Barcelona
+        </span>
+        
+        <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight drop-shadow-lg">
+            ¿Eres Latinoamericano y vives en España?
+        </h1>
+        
+        <p class="text-xl md:text-2xl text-[#f3e5c8] mb-10 font-light max-w-2xl mx-auto">
+            Facilitamos tu vida. Gestión integral de trámites consulares, extranjería y administrativos.
+        </p>
+        
+        <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+            <a href="https://wa.me/34611898500?text=Hola%20Brad,%20necesito%20ayuda%20con%20mis%20trámites%20en%20España." 
+               class="w-full sm:w-auto bg-[#25D366] text-white py-4 px-8 rounded-full font-bold text-lg shadow-[0_0_15px_rgba(37,211,102,0.5)] hover:bg-green-500 transition-transform transform hover:-translate-y-1 flex justify-center items-center gap-2">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+                WhatsApp
+            </a>
+            
+            <a href="mailto:bradzp19@icloud.com" 
+               class="w-full sm:w-auto bg-white text-[#6b0f1a] py-4 px-8 rounded-full font-bold text-lg shadow-lg hover:bg-gray-100 transition-transform transform hover:-translate-y-1 flex justify-center items-center gap-2 border-2 border-transparent hover:border-[#b39055]">
+                ✉️ Correo Electrónico
+            </a>
+        </div>
+    </div>
 </header>
 
-<section class="services">
-    <h2>Trámites que gestionamos por ti</h2>
-    <ul class="service-list">
-        <li>Canje de Permisos de Conducir (DGT) <a href="https://wa.me/34611898500?text=Hola,%20necesito%20información%20sobre%20el%20Canje%20de%20Permiso%20de%20Conducir">Consultar</a></li>
-        <li>Solicitud de Citas Previas (TIE, Huellas) <a href="https://wa.me/34611898500?text=Hola,%20necesito%20sacar%20una%20Cita%20Previa">Consultar</a></li>
-        <li>Renovación de Pasaportes Latinos <a href="https://wa.me/34611898500?text=Hola,%20necesito%20renovar%20mi%20pasaporte">Consultar</a></li>
-        <li>Apostillado y Legalización de Documentos <a href="https://wa.me/34611898500?text=Hola,%20necesito%20apostillar%20documentos">Consultar</a></li>
-    </ul>
+<section class="py-16 px-4 max-w-5xl mx-auto">
+    <h2 class="text-3xl font-bold text-center text-[#6b0f1a] mb-2">Trámites que gestionamos por ti</h2>
+    <p class="text-center text-gray-500 mb-10">Haz clic en cada trámite para ver requisitos, precios y tiempos estimados.</p>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        
+        <details class="bg-white border-l-4 border-[#b39055] rounded-xl shadow-md group cursor-pointer overflow-hidden">
+            <summary class="p-6 font-bold text-lg md:text-xl text-[#6b0f1a] flex justify-between items-center list-none hover:bg-gray-50 transition">
+                <span class="flex items-center gap-2">🚗 Canje de Permisos (DGT)</span>
+                <span class="transition-transform group-open:rotate-180 text-[#b39055]">▼</span>
+            </summary>
+            <div class="p-6 pt-0 text-gray-700 bg-gray-50">
+                <hr class="mb-4 border-gray-200">
+                <ul class="mb-5 space-y-2 text-sm md:text-base">
+                    <li><strong>📑 Requisitos:</strong> NIE, Padrón, Permiso original, Certificado médico.</li>
+                    <li><strong>⏳ Tiempo:</strong> Resguardo al instante , duracion de respuesta de entidades publicas 3 - 4 meses </li>
+                    <li><strong>💶 Precio:</strong> 25€ (Tasas incluidas).</li>
+                </ul>
+                <a href="https://wa.me/34611898500?text=Hola%20Brad,%20ya%20tengo%20los%20requisitos%20para%20el%20Canje%20de%20Permiso%20(DGT)%20y%20quiero%20iniciar%20el%20trámite." 
+                   class="block w-full text-center bg-[#25D366] text-white py-3 px-4 rounded-lg font-bold hover:bg-green-600 transition shadow-sm">
+                    Iniciar trámite por WhatsApp
+                </a>
+            </div>
+        </details>
+
+        <details class="bg-white border-l-4 border-[#b39055] rounded-xl shadow-md group cursor-pointer overflow-hidden">
+            <summary class="p-6 font-bold text-lg md:text-xl text-[#6b0f1a] flex justify-between items-center list-none hover:bg-gray-50 transition">
+                <span class="flex items-center gap-2">📅 Citas (TIE, Huellas)</span>
+                <span class="transition-transform group-open:rotate-180 text-[#b39055]">▼</span>
+            </summary>
+            <div class="p-6 pt-0 text-gray-700 bg-gray-50">
+                <hr class="mb-4 border-gray-200">
+                <ul class="mb-5 space-y-2 text-sm md:text-base">
+                    <li><strong>📑 Requisitos:</strong> Pasaporte, Resolución favorable, Empadronamiento(si fuera el caso).</li>
+                    <li><strong>⏳ Tiempo:</strong> Según disponibilidad (1-3 semanas).</li>
+                    <li><strong>💶 Precio:</strong> 25€.</li>
+                </ul>
+                <a href="https://wa.me/34611898500?text=Hola%20Brad,%20quiero%20contratar%20la%20búsqueda%20de%20Cita%20Previa%20para%20TIE/Huellas." 
+                   class="block w-full text-center bg-[#25D366] text-white py-3 px-4 rounded-lg font-bold hover:bg-green-600 transition shadow-sm">
+                    Solicitar cita ahora
+                </a>
+            </div>
+        </details>
+
+        <details class="bg-white border-l-4 border-[#b39055] rounded-xl shadow-md group cursor-pointer overflow-hidden">
+            <summary class="p-6 font-bold text-lg md:text-xl text-[#6b0f1a] flex justify-between items-center list-none hover:bg-gray-50 transition">
+                <span class="flex items-center gap-2">🛂 Renovación Pasaportes</span>
+                <span class="transition-transform group-open:rotate-180 text-[#b39055]">▼</span>
+            </summary>
+            <div class="p-6 pt-0 text-gray-700 bg-gray-50">
+                <hr class="mb-4 border-gray-200">
+                <ul class="mb-5 space-y-2 text-sm md:text-base">
+                    <li><strong>📑 Requisitos:</strong> Pasaporte anterior, Copia de DNI, 2 fotos.</li>
+                    <li><strong>⏳ Tiempo:</strong> 1 a 2 meses.</li>
+                    <li><strong>💶 Precio:</strong> 30€ + Tasas consulares.</li>
+                </ul>
+                <a href="https://wa.me/34611898500?text=Hola%20Brad,%20tengo%20los%20documentos%20para%20la%20renovación%20de%20mi%20Pasaporte." 
+                   class="block w-full text-center bg-[#25D366] text-white py-3 px-4 rounded-lg font-bold hover:bg-green-600 transition shadow-sm">
+                    Iniciar renovación
+                </a>
+            </div>
+        </details>
+
+        <details class="bg-white border-l-4 border-[#b39055] rounded-xl shadow-md group cursor-pointer overflow-hidden">
+            <summary class="p-6 font-bold text-lg md:text-xl text-[#6b0f1a] flex justify-between items-center list-none hover:bg-gray-50 transition">
+                <span class="flex items-center gap-2">📜 Apostillado / Legalización</span>
+                <span class="transition-transform group-open:rotate-180 text-[#b39055]">▼</span>
+            </summary>
+            <div class="p-6 pt-0 text-gray-700 bg-gray-50">
+                <hr class="mb-4 border-gray-200">
+                <ul class="mb-5 space-y-2 text-sm md:text-base">
+                    <li><strong>📑 Requisitos:</strong> Documento original a apostillar.</li>
+                    <li><strong>⏳ Tiempo:</strong> 2 a 4 días hábiles.</li>
+                    <li><strong>💶 Precio:</strong> 25€ por documento.</li>
+                </ul>
+                <a href="https://wa.me/34611898500?text=Hola%20Brad,%20necesito%20Apostillar/Legalizar%20unos%20documentos." 
+                   class="block w-full text-center bg-[#25D366] text-white py-3 px-4 rounded-lg font-bold hover:bg-green-600 transition shadow-sm">
+                    Enviar documentos
+                </a>
+            </div>
+        </details>
+
+    </div>
 </section>
 
-<footer>
-    <p>Brad P. Zanabria Pascual - Tu Gestor de Confianza<br>Teléfono: 611 89 85 00</p>
+<section class="bg-white py-12 border-y border-gray-200">
+    <div class="max-w-5xl mx-auto text-center px-4">
+        <h2 class="text-2xl font-bold text-[#6b0f1a] mb-8 uppercase tracking-wide">Garantía de Servicio Latino</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <span class="text-5xl block mb-4">⚡</span>
+                <h3 class="font-bold text-[#b39055] text-xl">Rapidez</h3>
+                <p class="text-gray-500 mt-2 text-sm">Agilizamos tus gestiones al máximo.</p>
+            </div>
+            <div>
+                <span class="text-5xl block mb-4">🎯</span>
+                <h3 class="font-bold text-[#b39055] text-xl">Eficacia</h3>
+                <p class="text-gray-500 mt-2 text-sm">Conocemos los procesos exactos.</p>
+            </div>
+            <div>
+                <span class="text-5xl block mb-4">🤝</span>
+                <h3 class="font-bold text-[#b39055] text-xl">Discreción</h3>
+                <p class="text-gray-500 mt-2 text-sm">Total seguridad con tus documentos.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="bg-gray-900 text-white pt-16 pb-8 px-4 border-t-8 border-[#b39055]">
+    <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 mb-10 border-b border-gray-700 pb-10">
+        
+        <div>
+            <h2 class="font-bold text-3xl text-[#b39055] mb-4">Brad P. Zanabria Pascual</h2>
+            <p class="text-gray-400 text-lg leading-relaxed max-w-sm">
+                Tu gestor de confianza. Asesoría integral exclusiva para la comunidad latinoamericana en Barcelona y toda España.
+            </p>
+        </div>
+
+        <div class="bg-gray-800 p-6 rounded-xl border border-gray-700 shadow-inner">
+            <h3 class="text-white font-bold text-xl mb-4 border-b border-gray-600 pb-2">Contacto Directo</h3>
+            <ul class="space-y-4">
+                <li class="flex items-center gap-3">
+                    <span class="text-xl">📞</span> 
+                    <a href="https://wa.me/34611898500" class="text-gray-300 hover:text-white hover:underline transition">611 89 85 00</a>
+                </li>
+                <li class="flex items-center gap-3">
+                    <span class="text-xl">✉️</span> 
+                    <a href="mailto:bradzp19@icloud.com" class="text-gray-300 hover:text-white hover:underline transition">bradzp19@icloud.com</a>
+                </li>
+                <li class="flex items-center gap-3">
+                    <span class="text-xl">🕒</span> 
+                    <span class="text-gray-300">Lunes a Viernes de 9:00 a 18:00</span>
+                </li>
+            </ul>
+        </div>
+        
+    </div>
+    <div class="text-center text-gray-500 text-sm">
+        <p>© 2026 Brad P. Zanabria. Todos los derechos reservados.</p>
+    </div>
+    <section class="bg-gradient-to-r from-[#b39055] via-[#cda662] to-[#b39055] text-white py-12 px-4 shadow-inner">
+    <div class="max-w-4xl mx-auto text-center">
+        <span class="text-5xl block mb-4 animate-pulse">🎁</span>
+        <h2 class="text-3xl md:text-4xl font-extrabold mb-4 drop-shadow-md text-[#4a0a12]">
+            ¿Vienes recomendado por un amigo?
+        </h2>
+        <p class="text-lg md:text-xl mb-8 font-medium text-gray-900 max-w-2xl mx-auto leading-relaxed">
+            Menciona a la persona que te recomendó al escribirme y obtén un <span class="bg-white text-[#6b0f1a] px-3 py-1 rounded-md font-black shadow-sm mx-1">10% DE DESCUENTO</span> en tu trámite. ¡Ayudarnos entre nosotros tiene premio!
+        </p>
+        <a href="https://wa.me/34611898500?text=Hola%20Brad,%20vengo%20recomendado%20por%20un%20amigo%20y%20quisiera%20aprovechar%20el%20descuento%20en%20mi%20trámite." 
+           class="inline-flex justify-center items-center gap-2 bg-[#6b0f1a] text-white py-4 px-8 rounded-full font-bold text-lg shadow-[0_4px_15px_rgba(107,15,26,0.4)] hover:bg-[#8b1523] transition-transform transform hover:-translate-y-1">
+            🎟️ Reclamar mi descuento
+        </a>
+    </div>
+</section>
 </footer>
+
+<a href="https://wa.me/34611898500?text=Hola%20Brad,%20vengo%20de%20tu%20página%20web%20y%20necesito%20hacer%20una%20consulta." 
+   class="fixed bottom-6 right-6 bg-[#25D366] text-white p-4 rounded-full shadow-[0_4px_15px_rgba(0,0,0,0.3)] hover:bg-green-600 hover:scale-110 transition-transform z-50 animate-bounce"
+   title="Chatear por WhatsApp">
+    <svg class="w-8 h-8 md:w-10 md:h-10" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+</a>
 
 </body>
 </html>
